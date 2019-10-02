@@ -7,3 +7,5 @@ function longestWord(str){
 }
 console.log(longestWord(str));
 module.exports=MaxWordLength;
+
+//wussup github????
