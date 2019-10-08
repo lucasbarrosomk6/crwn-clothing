@@ -1,0 +1,71 @@
+/* nav bar starts */
+ul {
+  font-family: "Noto Sans", sans-serif; /*changes font to website font*/
+  list-style-type: none; /*removes default bullet points*/
+  margin: 0; /*overides default margin*/
+  padding: 0; /*overides default padding*/
+  background-color: #338877; /*default color to second darkest*/
+  overflow: hidden;
+}
+li {
+  display: inline-table; /*keeps the nav bar centered*/
+}
+li a {
+  display: block;
+  color: #8ee4af;
+  text-align: center; /*centers text in li*/
+  padding: 14px 16px; /*set new padding*/
+  text-decoration: none;
+}
+li a:hover {
+  /*no functional reason to have this, I just like it*/
+  background-color: #05386b;
+  color: #8ee4af;
+}
+
+/* nav bar ends */
+
+body {
+  background-color: #5cdb95;
+  text-align: center; /*controls the entire websites text alignment*/
+  font-family: "Noto Sans", sans-serif; /*controls the entire websites font*/
+}
+#Q2 {
+  background-color: #05386b;
+  color: #8ee4af;
+  /*used percentages in order to maintain size of heading regaurdless of screen resolution*/
+  padding-bottom: 2.5%;
+  padding-top: 2.5%;
+  margin-left: 32.5%;
+  width: 35%;
+}
+form {
+  font-weight: bold;
+  background-color: #338877;
+  width: 35%;
+  padding-bottom: 2.5%;
+  padding-top: 2.5%;
+  margin-left: 32.5%;
+}
+button {
+  background-color: #05386b;
+  border: none;
+  color: #8ee4af;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; /*inline block is used so I can add a submit button later on, and I can have it centered*/
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; /*mto maintain curser consistency*/
+}
+label {
+  color: #50db8f;
+}
+
+br {
+  /*added to increase size of <br>, didnt want to fill up the html with a million of them*/
+  display: block;
+  content: ""; /*removed default size in order to set my own*/
+  margin-top: 25px; /*could stand to reduce this, but the spacing is nice*/
+}
