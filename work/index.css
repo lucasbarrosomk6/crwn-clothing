@@ -1,0 +1,90 @@
+/* header starts*/
+.head ul {
+  float: left;
+  font-family: "Noto Sans", sans-serif; /*changes font to website font*/
+  list-style-type: none; /*removes default bullet points*/
+  margin: 0; /*overides default margin*/
+  padding: 0; /*overides default padding*/
+  background-color: #338877; /*default color to second darkest*/
+  overflow: hidden;
+}
+.head li {
+  display: inline-table; /*keeps the nav bar centered*/
+  margin: auto;
+}
+.head li a {
+  display: block;
+  color: #8ee4af;
+  text-align: center; /*centers text in li*/
+  padding: 20px 20px; /*set new padding*/
+  text-decoration: none;
+}
+/* Header ends*/
+/* nav bar starts*/
+.navBar ul {
+  font-family: "Noto Sans", sans-serif; /*changes font to website font*/
+  list-style-type: none; /*removes default bullet points*/
+  margin: 0; /*overides default margin*/
+  padding: 0; /*overides default padding*/
+  background-color: #338877; /*default color to second darkest*/
+  overflow: hidden;
+}
+.navBar li {
+  display: inline-table; /*keeps the nav bar centered*/
+  margin: auto;
+}
+.navBar li a {
+  display: block;
+  color: #8ee4af;
+  text-align: center; /*centers text in li*/
+  padding: 20px 20px; /*set new padding*/
+  text-decoration: none;
+}
+.navBar li a:hover {
+  /*no functional reason to have this, I just like it*/
+  background-color: #05386b;
+  color: #8ee4af;
+}
+/* nav bar ends*/
+/* Footer starts*/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #338877;
+  color: 8ee4af;
+  text-align: center;
+}
+.footerLists ul {
+  font-family: "Noto Sans", sans-serif; /*changes font to website font*/
+  list-style-type: none; /*removes default bullet points*/
+  margin: 0; /*overides default margin*/
+  padding: 0; /*overides default padding*/
+  background-color: #338877; /*default color to second darkest*/
+  overflow: hidden;
+}
+.footerLists li {
+  display: inline-table;
+  margin: auto;
+  max-width: 30%;
+}
+.footerLists li .a {
+  display: block;
+  color: #8ee4af;
+  text-align: center; /*centers text in li*/
+  padding: 20px 20px; /*set new padding*/
+  text-decoration: none;
+}
+.footerLists li a {
+  display: block;
+  color: #8ee4af;
+  text-align: center; /*centers text in li*/
+  padding: 10px 10px; /*set new padding*/
+  text-decoration: none;
+}
+a.tel:hover {
+  background-color: #05386b;
+  color: #8ee4af;
+}
+/* footer ends*/

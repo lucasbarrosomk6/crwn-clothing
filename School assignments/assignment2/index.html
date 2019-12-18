@@ -1,0 +1,97 @@
+<!DOCKTYPE html>
+<html>
+  <head>
+    <title>Question 2</title>
+    <link rel="stylesheet" type="text/css" href="Assignment1.css" />
+    <script src="prefixFree.js"></script>
+    <script src="index.js"></script>
+    <script src="modernizr.js">
+        function progress(){
+            if ((Modernizr.progressbar, meter)) {
+          let b = "progress bar would go here, if i could make one";
+        } else {
+          let b = "progress bar not available";
+        }
+      }
+      progress();
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navLinks">
+        <ul>
+          <li><a href="#">prefix free example (cell cursor)</a></li>
+          <li><a href="#">Nav bar 2</a></li>
+          <li><a href="#">Nav bar 3</a></li>
+          <li><a href="#">Nav bar 4</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="grid-container">
+        <div class="grid-item grid-item-1">
+          <h1>Fill out info below</h1>
+        </div>
+        
+        <div class="grid-item grid-item-2">
+          <form>
+            <label for="email">Email</label>
+            <input name="email"type="email">
+            <br>
+            <label for="url">URL</label>
+            <input name="url"type="url">
+            <br>
+            <label for="birthdate">Birth Date</label>
+            <input name="birthdate"type="date">
+            <br>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other
+            <br>
+            <textarea rows="4" cols="40">learning is fun. dont pull out your hair
+            </textarea>
+            <br>
+            <label for="checkbox">All data entered is not real</label>
+            <input name="checkbox"type="checkbox">
+            <br>
+            <input name="reset"type="reset"style=>
+          </form>
+        </div>
+        
+        
+        <div class="grid-item grid-item-3">
+          <h3>These items will change position if css grid is not supported</h3>
+
+        </div>
+      
+      
+        <div class="grid-item grid-item-4">
+         <h3>these boxes will turn blue in landscape mode</h3>
+
+        </div>
+      
+      
+        <div class="grid-item grid-item-5">
+          <h3>this is the power of</h3>
+          
+
+        </div>
+      
+      
+        <div class="grid-item grid-item-6">
+        <h3>modernizr and</h3>
+        </div>
+      
+        <div class="grid-item grid-item-7">
+          <h3>css media querys</h3>
+        </div>
+        
+
+     </div>
+    </div>
+  </body>
+</html>

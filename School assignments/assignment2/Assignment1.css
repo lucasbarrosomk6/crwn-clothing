@@ -1,0 +1,148 @@
+/* nav bar starts */
+.navLinks {
+  justify-content: center;
+}
+ul {
+  width: 100%;
+  font-family: "Noto Sans", sans-serif; /*changes font to website font*/
+  list-style-type: none; /*removes default bullet points*/
+  margin: 0; /*overides default margin*/
+  padding: 0; /*overides default padding*/
+  background-color: #338877; /*default color to second darkest*/
+  overflow: hidden;
+}
+li {
+  display: inline-table; /*keeps the nav bar centered*/
+}
+li a {
+  display: block;
+  color: #8ee4af;
+  text-align: center; /*centers text in li*/
+  padding: 14px 16px; /*set new padding*/
+  text-decoration: none;
+}
+li a:hover {
+  /*no functional reason to have this, I just like it*/
+  background-color: #05386b;
+  color: #8ee4af;
+  cursor: cell;
+}
+
+/* nav bar ends */
+@media (orientation: landscape) {
+  /* if css grid is supported*/
+  .cssgrid .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr repeat;
+    grid-auto-rows: 2fr;
+    grid-gap: 10px;
+    padding: 1px;
+  }
+  .cssgrid .grid-item {
+    display: flex;
+    background-color: aquamarine;
+    border: outset;
+    align-items: center;
+    justify-content: center;
+  }
+  .cssgrid .grid-item-1 {
+    background-color: purple;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .cssgrid .grid-item-2 {
+    display: block;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 5;
+  }
+
+  /*if css grid is supported */
+  /* if css grid is not supported */
+  .no-cssgrid .grid-container {
+    display: block;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr repeat;
+    grid-auto-rows: 2fr;
+    grid-gap: 10px;
+    padding: 1px;
+  }
+  .no-cssgrid .grid-item {
+    display: flexbox;
+    background-color: aquamarine;
+    border: outset;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .no-cssgrid .no-cssgrid .grid-item-1 {
+    display: block;
+    width: 100%;
+    background-color: purple;
+  }
+  .no-cssgrid .grid-item-2 {
+    display: block;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 5;
+  }
+}
+@media (orientation: portrait) {
+  /* if css grid is supported*/
+  .cssgrid .grid-container {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr;
+    grid-auto-rows: repeat(7, auto);
+    grid-gap: 10px;
+    padding: 1px;
+  }
+  .cssgrid .grid-item {
+    display: flex;
+    background-color: purple;
+    border: outset;
+    align-items: center;
+    justify-content: center;
+  }
+  .cssgrid .grid-item-1 {
+    background-color: purple;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .cssgrid .grid-item-2 {
+    display: block;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 5;
+  }
+  .no-cssgrid .grid-container {
+    display: block;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr repeat;
+    grid-auto-rows: 2fr;
+    grid-gap: 10px;
+    padding: 1px;
+  }
+  .no-cssgrid .grid-item {
+    display: flexbox;
+    background-color: aquamarine;
+    border: outset;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .no-cssgrid .no-cssgrid .grid-item-1 {
+    display: block;
+    width: 100%;
+    background-color: purple;
+  }
+  .no-cssgrid .grid-item-2 {
+    display: block;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 5;
+  }
+
+  /*if css grid is supported */
+}
