@@ -112,3 +112,8 @@ function getPlaces() {
       console.log("Fetch Error :-S", err);
     });
 }
+
+function vibrateButton() {
+  navigator.vibrate([500]);
+  console.log("vibrated");
+}
