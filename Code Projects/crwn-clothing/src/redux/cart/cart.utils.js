@@ -14,3 +14,14 @@ export const addItemToCart = (cartItems, cartItemToAdd) => {
   }
   return [...cartItems, { ...cartItemToAdd, quantity: 1 }]; //if the item added is unique, it is added to the array with a base quantity of 1 .
 }; //this function is where we add the quantity prop to our cardItem.
+export const removeItemFromCart = (cartItems, cartItemToRemove) => {
+  const existingCartItem = cartItems.find(
+    //if there is a match, then existingCartItem will exist.
+    cartItem => cartItem.id === cartItemToRemove.id
+  );
+  if (existingCartItem) {
+    //if the cart item exists, then we filter it out
+    return cartItems.filter(cartItem => cartItem.id !== cartItemToRemove.id);
+  }
+  return cartItems;
+};
