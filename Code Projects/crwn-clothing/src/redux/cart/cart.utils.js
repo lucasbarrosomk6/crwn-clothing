@@ -12,7 +12,7 @@ export const addItemToCart = (cartItems, cartItemToAdd) => {
         : cartItem
     );
   }
-  return [...cartItems, { ...cartItemToAdd, quantity: 1 }]; //if the item added is unique, it is added to the array with a base quantity of 1 .
+  return [...cartItems, cartItemToAdd]; //if the item added is unique, it is added to the array with a base quantity of 1 .
 }; //this function is where we add the quantity prop to our cardItem.
 export const removeItemFromCart = (cartItems, cartItemToRemove) => {
   const existingCartItem = cartItems.find(
